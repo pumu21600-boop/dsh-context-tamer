@@ -44,9 +44,3 @@ DSH 上下文降本插件：让长项目会话成本可控、输出不截断、�
 - `GET /dsh-context-tamer/sessions`：诊断端点，列出 live 会话 id → cwd
 - 投影 key `contextTamer`：上下文估算与轮次/消息/工具事件计数
 
-## 发布规范（必须遵守）
-
-- 每次发布或更新必须打 tag：`v<major>.<minor>.<patch>`（与 `package.json` version 一致），并附简短说明
-- 先更新代码与 `package.json` version → 提交 → 打 tag → GitHub Releases 附 changelog 要点
-- 本机 git 无 https 组件时的替代：用 GitHub Contents/Git Data API 上传（见维护记录），但 tag/release 必须照常创建
-
