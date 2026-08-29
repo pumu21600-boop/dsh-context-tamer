@@ -1,6 +1,6 @@
 {
   "name": "dsh-context-tamer",
-  "version": "0.2.0",
+  "version": "0.1.0",
   "private": false,
   "description": "DSH context budget meter + one-click seamless continuation: per-session handoff files keep long projects cheap, lossless, and truncation-free",
   "type": "module",
