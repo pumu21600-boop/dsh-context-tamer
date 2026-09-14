@@ -1,6 +1,6 @@
 {
   "name": "dsh-context-tamer",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "description": "DSH context budget meter + one-click seamless continuation: per-session handoff files keep long projects cheap, lossless, and truncation-free",
   "type": "module",
@@ -14,7 +14,9 @@
     "client": {
       "platform": "web",
       "inject": [
-        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-api-session-controller",
+        "@deepseek-ai/dsh-api-workspace-controller",
         "@deepseek-ai/dsh-client-locale",
         "@deepseek-ai/dsh-client-ui-conversation"
       ]
@@ -22,6 +24,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "zod": "^3.25.0"
+    "@deepseek-ai/schemastery": "^3.18.2",
+    "zod": "^3.25.76"
   }
 }
