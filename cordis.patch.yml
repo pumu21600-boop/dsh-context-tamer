@@ -1,0 +1,8 @@
+# dsh-context-tamer bundle patch（DSH ≥ 0.2.0 插件即 bundle）。
+# 本包被加入 profile 的 dsh.profile.bundles 后，由这层 patch 把插件自身
+# 插入 cordis 树；阈值 / Git 自动提交等配置的 schema 来自 lib/index.js 的
+# Config 导出，宿主 apply(ctx, config) 读取、configEditor 写入。
+
+- insert:
+    - id: dsh-context-tamer
+      name: 'dsh-context-tamer'
